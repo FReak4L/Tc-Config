@@ -62,6 +62,10 @@ bash tc.sh -s
 ```bash
 bash tc.sh -h
 ```
+Delete All TC configuration : 
+```bash
+bash tc.sh -d
+```
 <img src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/help.jpg" alt="Help Menu" />
 
 ## Steps and Configuration
