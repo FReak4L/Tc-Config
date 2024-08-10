@@ -73,7 +73,7 @@ Here's what the script does, step-by-step:
   
   <li>
     <strong>System Update & Package Installation:</strong> 
-    <p>Next, it updates your system and installs necessary packages like `iproute2` and `iptables`. These tools are essential for managing network traffic and applying the QoS rules.</p>
+    <p>Next, it updates your system and installs necessary packages like <code>iproute2</code> and <code>iptables</code>. These tools are essential for managing network traffic and applying the QoS rules.</p>
   </li>
   
   <li>
