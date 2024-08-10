@@ -23,7 +23,8 @@
   <li><strong>Xanmod Kernel:</strong> This script is designed to work with the Xanmod kernel. Make sure it's installed and running.</li>
   <li><strong>Required Packages:</strong> `iproute2`, `iptables`</li>
 </ul>
-
+## Menu 
+src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/menu.jpg" alt="Menu Script"
 ## Installation
 
 <p>To run this script directly using <strong>wget</strong> or <strong>curl</strong>, follow the instructions below:</p>
@@ -70,7 +71,6 @@ Here's what the script does, step-by-step:
   <li>
     <strong>System Update & Package Installation:</strong> 
     <p>Next, it updates your system and installs necessary packages like `iproute2` and `iptables`. These tools are essential for managing network traffic and applying the QoS rules.</p>
-    <img src="https://github.com/FReak4L/Tc-Config/raw/main/img/installing_required.jpg" alt="System Update & Package Installation" />
   </li>
   
   <li>
@@ -100,7 +100,7 @@ Here's what the script does, step-by-step:
 </ul>
 
 <p align="center">
-  <img src="https://github.com/FReak4L/Tc-Config/raw/main/img/steps.jpg" alt="Script Steps" />
+  <img src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/step.jpg" alt="Script Steps" />
 </p>
 
 ## Logging
