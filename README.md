@@ -64,7 +64,7 @@ Here's what the script does, step-by-step:
   <li>
     <strong>Kernel Check:</strong> 
     <p>The script starts by checking if you're using the Xanmod kernel. This is crucial because the script is optimized for the advanced features provided by Xanmod.</p>
-    <img src="[https://github.com/FReak4L/Tc-Config/raw/main/img/check_kernel.jpg](https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/chk-kernel.jpg)" alt="Kernel Check" />
+    <img src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/chk-kernel.jpg" alt="Kernel Check" />
   </li>
   
   <li>
