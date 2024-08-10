@@ -23,8 +23,10 @@
   <li><strong>Xanmod Kernel:</strong> This script is designed to work with the Xanmod kernel. Make sure it's installed and running.</li>
   <li><strong>Required Packages:</strong> `iproute2`, `iptables`</li>
 </ul>
+
 ## Menu 
-src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/menu.jpg" alt="Menu Script"
+<img src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/menu.jpg" alt="Menu Script" />
+
 ## Installation
 
 <p>To run this script directly using <strong>wget</strong> or <strong>curl</strong>, follow the instructions below:</p>
