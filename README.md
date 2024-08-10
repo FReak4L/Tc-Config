@@ -11,12 +11,15 @@
 ## Features
 
 <ul>
-  <li><strong>Kernel Detection:</strong> Automatically checks if the Xanmod kernel is active.</li>
-  <li><strong>System Update:</strong> Updates and upgrades your system, then installs the required packages.</li>
-  <li><strong>QoS Configuration:</strong> Sets up `tc` for efficient traffic management using Hierarchical Token Bucket (HTB) and other queue disciplines (qdisc).</li>
-  <li><strong>Traffic Shaping:</strong> Implements advanced traffic shaping, prioritization, and obfuscation techniques.</li>
-  <li><strong>Logging:</strong> All actions are logged for easy troubleshooting and auditing.</li>
+  <li><strong>Xanmod Kernel Detection:</strong> The script automatically verifies the presence of the Xanmod kernel, a performance-oriented kernel optimized for high-throughput and low-latency operations. This ensures that your system is primed for the advanced features the script is designed to implement.</li>
+  <li><strong>System Update & Package Installation:</strong> Ensures that your system is up-to-date by performing a comprehensive update and installing critical networking tools like <code>iproute2</code> and <code>iptables</code>. These components form the backbone of the script’s traffic control and QoS management capabilities.</li>
+  <li><strong>Advanced QoS Configuration:</strong> Leverages <code>tc</code> (traffic control) with <code>HTB</code> (Hierarchical Token Bucket) to establish a sophisticated QoS system. This configuration enables precise control over traffic flow, ensuring efficient bandwidth distribution and prioritization of critical network traffic.</li>
+  <li><strong>Multi-layer Traffic Shaping:</strong> Implements state-of-the-art traffic shaping techniques, incorporating cutting-edge algorithms such as <code>CAKE</code>, <code>FQ_Codel</code>, and <code>FQ_PIE</code>. These algorithms dynamically manage traffic queues to minimize latency and bufferbloat, delivering an optimized network experience.</li>
+  <li><strong>Adaptive Queue Management:</strong> Utilizes adaptive queue management strategies that respond in real-time to network conditions, adjusting traffic flow to maintain optimal performance. This includes fine-tuning of queue disciplines to balance fairness and efficiency.</li>
+  <li><strong>Intelligent Packet Manipulation:</strong> Applies advanced <code>iptables</code> rules for sophisticated packet filtering, redirection, and modification, enhancing both security and performance. The script intelligently adjusts TCP MSS values and applies custom ToS flags to optimize data flow.</li>
+  <li><strong>Detailed Logging:</strong> Captures detailed logs of all operations for thorough auditing and troubleshooting, ensuring transparency and traceability in the script’s execution.</li>
 </ul>
+
 
 ## Prerequisites
 
@@ -67,30 +70,41 @@ Here's what the script does, step-by-step:
 <ol>
   <li>
     <strong>Kernel Check:</strong> 
-    <p>The script starts by checking if you're using the Xanmod kernel. This is crucial because the script is optimized for the advanced features provided by Xanmod.</p>
+    <p>The script begins by ensuring the Xanmod kernel is active. This kernel is tailored for high-performance networking and system responsiveness, making it a critical component for the script's advanced traffic management features. If the correct kernel is not detected, the script provides immediate feedback, allowing you to take corrective action.</p>
     <img src="https://raw.githubusercontent.com/FReak4L/Tc-Config/main/img/chk-kernel.jpg" alt="Kernel Check" />
   </li>
   
   <li>
     <strong>System Update & Package Installation:</strong> 
-    <p>Next, it updates your system and installs necessary packages like <code>iproute2</code> and <code>iptables</code>. These tools are essential for managing network traffic and applying the QoS rules.</p>
+    <p>Next, the script performs a comprehensive system update, ensuring all software is current. It then installs essential networking packages such as <code>iproute2</code> and <code>iptables</code>. These tools are fundamental for the script's operation, providing the necessary functionality for traffic control and quality of service management.</p>
   </li>
   
   <li>
     <strong>QoS Setup:</strong> 
-    <p>Here, <code>tc</code>` (traffic control) is configured with HTB (Hierarchical Token Bucket) to manage your network traffic. This setup ensures that traffic is allocated fairly among different types of network usage, prioritizing important traffic when necessary.</p>
+    <p>The script then sets up <code>tc</code> with <code>HTB</code>, creating a multi-tiered traffic control structure. This setup allows for hierarchical bandwidth allocation, ensuring that critical traffic is prioritized while maintaining overall network efficiency. The use of HTB ensures that bandwidth is distributed according to predefined rules, optimizing network performance under varying loads.</p>
   </li>
   
   <li>
     <strong>Traffic Shaping:</strong> 
-    <p>The script then implements traffic shaping techniques using advanced queue disciplines like `<code>FQ_Codel</code>, <code>FQ_Pie</code>, and <code>CAKE</code>. These help reduce latency and bufferbloat, leading to a smoother internet experience.</p>
+    <p>To further enhance network performance, the script implements advanced traffic shaping techniques using algorithms like <code>FQ_Codel</code>, <code>FQ_PIE</code>, and <code>CAKE</code>. These algorithms are designed to intelligently manage queue lengths and reduce network latency. By minimizing bufferbloat, they ensure a more responsive internet experience, particularly under conditions of heavy network usage.</p>
+  </li>
+  
+  <li>
+    <strong>Advanced Traffic Optimization:</strong>
+    <p>The script then configures a complex queue discipline structure, tailoring it to various types of traffic such as video streaming, gaming, or bulk downloads. This customization allows each type of traffic to be handled according to its specific needs, optimizing both performance and user experience. The script's use of advanced algorithms like <code>CAKE</code> and <code>FQ_PIE</code> enables it to adapt dynamically to changing network conditions, ensuring consistent performance.</p>
   </li>
   
   <li>
     <strong>Traffic Management & Obfuscation:</strong> 
-    <p>Finally, <code>iptables</code> rules are added to manage and obfuscate traffic. This step is important for ensuring that your network remains efficient and secure, by controlling the flow of packets and preventing congestion.</p>
+    <p>At this stage, the script implements advanced traffic classification and management techniques. It intelligently sorts network traffic into distinct classes and applies obfuscation methods to protect against traffic analysis. This step enhances both the security and efficiency of your network, making it difficult for external observers to deduce traffic patterns or prioritize certain types of traffic.</p>
+  </li>
+  
+  <li>
+    <strong>Final Touches:</strong>
+    <p>Finally, the script fine-tunes packet handling using <code>iptables</code>. This includes adjusting the TCP Maximum Segment Size (MSS) to optimize the performance of TCP connections and applying custom Type of Service (ToS) flags to ensure that different types of traffic are prioritized correctly. These final adjustments are critical for maximizing network efficiency and ensuring that your system's traffic management policies are enforced correctly.</p>
   </li>
 </ol>
+
 
 ## Script Menu
 
