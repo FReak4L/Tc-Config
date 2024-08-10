@@ -119,6 +119,6 @@ Here's what the script does, step-by-step:
 </p>
 ## License
 
-<p>This project is licensed under the MIT License.</p>
+<p>This project is licensed under the GNU General Public License v3.0.</p>
 
 <p align="center"><strong>Note:</strong> Use this script at your own risk. It is provided "as is" without any warranty.</p>
