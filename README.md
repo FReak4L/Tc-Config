@@ -114,8 +114,13 @@ Here's what the script does, step-by-step:
 
 <p>If you have suggestions or want to contribute, feel free to open an issue or submit a pull request.</p>
 
-<p align="center"> [![Telegram](https://img.icons8.com/?size=100&id=k4jADXhS5U1t&format=png&color=000000)](https://t.me/FReak_4L) </p>
-
+<p align="center">
+  <a href="https://t.me/FReak_4L">
+    <img src="https://img.icons8.com/?size=100&id=k4jADXhS5U1t&format=png&color=000000" alt="Telegram" />
+  </a>
+  <br />
+  <a href="https://t.me/FReak_4L">DM</a>
+</p>
 ## License
 
 <p>This project is licensed under the MIT License.</p>
