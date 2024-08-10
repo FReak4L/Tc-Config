@@ -110,10 +110,6 @@ Here's what the script does, step-by-step:
 
 <p>All actions performed by the script are logged to <code>/var/log/tc-freak.log</code>. This log can be very useful for troubleshooting or simply reviewing the changes made by the script.</p>
 
-## Contribution
-
-<p>If you have suggestions or want to contribute, feel free to open an issue or submit a pull request.</p>
-
 <p align="center">
   <a href="https://t.me/FReak_4L">
     <img src="https://img.icons8.com/?size=100&id=k4jADXhS5U1t&format=png&color=000000" alt="Telegram" />
