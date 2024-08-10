@@ -1,6 +1,6 @@
 <img src="https://socialify.git.ci/FReak4L/Tc-Config/image?description=1&font=Source%20Code%20Pro&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FFReak4L%2Fwarp-plus%2Fmain%2Fimg%2F%2540FReakXray.png&name=1&pattern=Brick%20Wall&theme=Dark" alt="repo image" />
 
-# Tc-Config
+<p align="center"><strong>TC-Config</strong></p>
 
 
 <p align="center">
