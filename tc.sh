@@ -240,13 +240,21 @@ case "$1" in
     -c|--channel)
         echo -e "${YELLOW}Join our Telegram channel: @FreakXray${NC}"
         ;;
-    -h|--help)
-        display_help
-        ;;
     -d|--delete)
         echo -e "${YELLOW}Deleting TC configuration...${NC}"
-        tc qdisc del dev $IFACE root
-        echo -e "${GREEN}TC configuration deleted.${NC}"
+        read -p "Enter the network interface (e.g., eth0, ens3): " IFACE
+        if [ -z "$IFACE" ]; then
+            echo -e "${RED}No interface specified. Defaulting to eth0.${NC}"
+            IFACE="eth0"
+        fi
+        if tc qdisc del dev $IFACE root 2>/dev/null; then
+            echo -e "${GREEN}TC configuration for $IFACE deleted successfully.${NC}"
+        else
+            echo -e "${RED}Failed to delete TC configuration for $IFACE. It may not exist or you may need root privileges.${NC}"
+        fi
+        ;;
+    -h|--help)
+        display_help
         ;;
     *)
         echo -e "${RED}Invalid option. Use -h or --help for usage information.${NC}"
