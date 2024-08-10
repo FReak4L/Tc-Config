@@ -209,28 +209,6 @@ run_script() {
     echo -e "${GREEN}Step [✓]:${LIGHT_PURPLE} - Advanced traffic optimization completed.${NC}"
     log_message "Done [✓]: Advanced traffic optimization implemented successfully."
 
-# Step 7: Sophisticated Traffic Management and Obfuscation Techniques
-    echo -e "${YELLOW}Step 7:${LIGHT_PURPLE} Implementing advanced traffic management and obfuscation${NC}"
-    log_message "Starting Step 7: Advanced traffic management and obfuscation"
-
-    # Implement advanced traffic classification
-    execute_tc_command "tc filter add dev $IFACE parent 1: protocol ip prio 1 u32 match u8 0 0 flowid 1:10"
-    execute_tc_command "tc filter add dev $IFACE parent 1: protocol ip prio 2 u32 match u8 0 0 flowid 1:20"
-    execute_tc_command "tc filter add dev $IFACE parent 1: protocol ip prio 3 u32 match u8 0 0 flowid 1:30"
-
-    # Advanced traffic obfuscation techniques
-    execute_tc_command "tc filter add dev $IFACE parent 1: protocol ip prio 4 u32 match u8 0 0 action mirred egress redirect dev lo"
-    execute_tc_command "ip route add local default dev lo table 100"
-    execute_tc_command "ip rule add fwmark 1 lookup 100"
-
-    # Implement sophisticated packet manipulation
-    execute_command "iptables -t mangle -A POSTROUTING -o $IFACE -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1240"
-    execute_command "iptables -t mangle -A POSTROUTING -o $IFACE -p tcp -m tcp --tcp-flags SYN,RST SYN -j MARK --set-mark 1"
-    execute_command "iptables -t mangle -A POSTROUTING -o $IFACE -j TOS --set-tos 0x10/0xff"
-
-    echo -e "${GREEN}Step [✓]:${LIGHT_PURPLE} - Advanced traffic management and obfuscation completed.${NC}"
-    log_message "Done [✓]: Advanced traffic management and obfuscation techniques implemented successfully."
-
     echo -e "${GREEN}Script execution completed. Advanced network optimization is now in place.${NC}"
 echo -e "${YELLOW}
             ╔═══════════════ Premium FreakXray TC Optimizer ═══════════════╗
