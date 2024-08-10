@@ -21,7 +21,7 @@
 
 <ul>
   <li><strong>Xanmod Kernel:</strong> This script is designed to work with the Xanmod kernel. Make sure it's installed and running.</li>
-  <li><strong>Required Packages:</strong> `iproute2`, `iptables`</li>
+  <li><strong>Required Packages:</strong> <code>iproute2</code>, <code>iptable</code></li>
 </ul>
 
 ## Menu 
@@ -77,17 +77,17 @@ Here's what the script does, step-by-step:
   
   <li>
     <strong>QoS Setup:</strong> 
-    <p>Here, `tc` (traffic control) is configured with HTB (Hierarchical Token Bucket) to manage your network traffic. This setup ensures that traffic is allocated fairly among different types of network usage, prioritizing important traffic when necessary.</p>
+    <p>Here, <code>tc</code>` (traffic control) is configured with HTB (Hierarchical Token Bucket) to manage your network traffic. This setup ensures that traffic is allocated fairly among different types of network usage, prioritizing important traffic when necessary.</p>
   </li>
   
   <li>
     <strong>Traffic Shaping:</strong> 
-    <p>The script then implements traffic shaping techniques using advanced queue disciplines like `fq_codel`, `fq_pie`, and `cake`. These help reduce latency and bufferbloat, leading to a smoother internet experience.</p>
+    <p>The script then implements traffic shaping techniques using advanced queue disciplines like `<code>FQ_Codel</code>, <code>FQ_Pie</code>, and <code>CAKE</code>. These help reduce latency and bufferbloat, leading to a smoother internet experience.</p>
   </li>
   
   <li>
     <strong>Traffic Management & Obfuscation:</strong> 
-    <p>Finally, `iptables` rules are added to manage and obfuscate traffic. This step is important for ensuring that your network remains efficient and secure, by controlling the flow of packets and preventing congestion.</p>
+    <p>Finally, <code>iptables</code> rules are added to manage and obfuscate traffic. This step is important for ensuring that your network remains efficient and secure, by controlling the flow of packets and preventing congestion.</p>
   </li>
 </ol>
 
@@ -96,9 +96,9 @@ Here's what the script does, step-by-step:
 <p>The script provides a user-friendly menu where you can select your network interface and set your desired uplink and downlink speeds:</p>
 
 <ul>
-  <li>Interface: `eth0` (default), `ens3`, or custom.</li>
-  <li>Uplink: `5gbit` (default), `1gbit`, or custom.</li>
-  <li>Downlink: `5gbit` (default), `1gbit`, or custom.</li>
+  <li>Interface: <code>eth0</code> (default), <code>ens3</code>, or custom.</li>
+  <li>Uplink: <code>5gbit</code> (default), <code>1gbit</code>, or custom.</li>
+  <li>Downlink: <code>5gbit</code> (default), <code>1gbit</code>, or custom.</li>
 </ul>
 
 <p align="center">
