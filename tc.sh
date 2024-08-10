@@ -15,6 +15,7 @@ display_help() {
     echo -e "  ${YELLOW}-p, --premium${NC}  For premium configuration DM telegram to: @Freak_4L"
     echo -e "  ${YELLOW}-c, --channel${NC}  Channel in telegram: @FreakXray"
     echo -e "  ${YELLOW}-h, --help${NC}     Display this help message"
+    echo -e "  ${YELLOW}-d, --delete${NC}   Delete TC configuration"
 }
 
 # Function to run the main script
@@ -241,6 +242,11 @@ case "$1" in
         ;;
     -h|--help)
         display_help
+        ;;
+    -d|--delete)
+        echo -e "${YELLOW}Deleting TC configuration...${NC}"
+        tc qdisc del dev $IFACE root
+        echo -e "${GREEN}TC configuration deleted.${NC}"
         ;;
     *)
         echo -e "${RED}Invalid option. Use -h or --help for usage information.${NC}"
